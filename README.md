@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="src/assets/image/logo.png" alt="RedBook Logo" width="200" />
-
 # 📕 RedBook
 
 ### 仿小红书移动端 Web App · Vue 3 全家桶实战项目
@@ -30,28 +28,26 @@
 
 > 以下为项目实际运行截图。所有数据由 Mock.js 动态生成，每次启动结果不同。
 
-| 首页瀑布流 | 笔记详情 |
-|:---:|:---:|
-| <img src="https://picsum.photos/seed/redbook-home/375/667" width="280" /> | <img src="https://picsum.photos/seed/redbook-detail/375/667" width="280" /> |
+|                                首页瀑布流                                 |                                  笔记详情                                   |
+| :-----------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
+| <img src="docs/screenshots/home.png" width="280" /> | <img src="docs/screenshots/detail.png" width="280" /> |
 
-| 商城 | 通知 | 我的 |
-|:---:|:---:|:---:|
-| <img src="https://picsum.photos/seed/redbook-shop/375/667" width="180" /> | <img src="https://picsum.photos/seed/redbook-notice/375/667" width="180" /> | <img src="https://picsum.photos/seed/redbook-mine/375/667" width="180" /> |
-
-> ⚠️ 请替换为实际截图。推荐使用 Chrome DevTools 的 Device Mode（375×667 iPhone 6/7/8）截图，放在 `docs/screenshots/` 目录下。
+|                                   商城                                    |                                    通知                                     |                                   我的                                    |
+| :-----------------------------------------------------------------------: | :-------------------------------------------------------------------------: | :-----------------------------------------------------------------------: |
+| <img src="docs/screenshots/shopping.png" width="180" /> | <img src="docs/screenshots/msg.png" width="180" /> | <img src="docs/screenshots/my.png" width="180" /> |
 
 ---
 
 ## ✨ 功能特性
 
-| 模块 | 功能点 |
-|------|--------|
-| 🏠 **首页** | 11 个频道分类 Tab · 横向滚动导航 · 瀑布流笔记卡片 · IntersectionObserver 触底加载 · 骨架屏加载态 |
-| 📝 **笔记详情** | 图片横向滑动轮播 + 圆点指示器 · 富文本正文 · 评论列表 · 点赞/收藏/关注（乐观更新 + 失败回滚） |
-| 🛍️ **商城** | 8 个商品分类 · 子分类筛选 · 双列商品卡片 · 价格/销量/标签展示 |
-| 🔔 **通知** | 消息列表 · 未读红点角标 · 免打扰图标 · 点赞/关注/评论/系统四类消息 |
-| 👤 **我的** | 个人主页头部 + 背景图 · 快捷工具入口 · 笔记/收藏/赞过 Tab 切换 · 瀑布流笔记列表 |
-| 🧩 **通用** | 底部导航栏（路由激活高亮） · 404 页面 · 图片懒加载指令 · 响应式移动端布局 |
+| 模块            | 功能点                                                                                           |
+| --------------- | ------------------------------------------------------------------------------------------------ |
+| 🏠 **首页**     | 11 个频道分类 Tab · 横向滚动导航 · 瀑布流笔记卡片 · IntersectionObserver 触底加载 · 骨架屏加载态 |
+| 📝 **笔记详情** | 图片横向滑动轮播 + 圆点指示器 · 富文本正文 · 评论列表 · 点赞/收藏/关注（乐观更新 + 失败回滚）    |
+| 🛍️ **商城**     | 8 个商品分类 · 子分类筛选 · 双列商品卡片 · 价格/销量/标签展示                                    |
+| 🔔 **通知**     | 消息列表 · 未读红点角标 · 免打扰图标 · 点赞/关注/评论/系统四类消息                               |
+| 👤 **我的**     | 个人主页头部 + 背景图 · 快捷工具入口 · 笔记/收藏/赞过 Tab 切换 · 瀑布流笔记列表                  |
+| 🧩 **通用**     | 底部导航栏（路由激活高亮） · 404 页面 · 图片懒加载指令 · 响应式移动端布局                        |
 
 ---
 
@@ -59,41 +55,41 @@
 
 ### 核心框架
 
-| 技术 | 版本 | 用途 |
-|------|------|------|
-| [Vue 3](https://vuejs.org/) | 3.5 | 渐进式前端框架，Composition API + `<script setup>` |
-| [Vite](https://vite.dev/) | 7.3 | 下一代前端构建工具，秒级 HMR |
-| [Pinia](https://pinia.vuejs.org/) | 3.0 | Vue 官方状态管理库 |
-| [Vue Router](https://router.vuejs.org/) | 5.0 | 官方路由管理器 |
+| 技术                                    | 版本 | 用途                                               |
+| --------------------------------------- | ---- | -------------------------------------------------- |
+| [Vue 3](https://vuejs.org/)             | 3.5  | 渐进式前端框架，Composition API + `<script setup>` |
+| [Vite](https://vite.dev/)               | 7.3  | 下一代前端构建工具，秒级 HMR                       |
+| [Pinia](https://pinia.vuejs.org/)       | 3.0  | Vue 官方状态管理库                                 |
+| [Vue Router](https://router.vuejs.org/) | 5.0  | 官方路由管理器                                     |
 
 ### UI & 样式
 
-| 技术 | 用途 |
-|------|------|
-| [Tailwind CSS](https://tailwindcss.com/) | 原子化 CSS 框架，Utility-First 开发体验 |
-| [Element Plus](https://element-plus.org/) | Vue 3 组件库（Message 提示等） |
-| [IconFont](https://www.iconfont.cn/) | 阿里图标库，自定义图标字体 |
+| 技术                                      | 用途                                    |
+| ----------------------------------------- | --------------------------------------- |
+| [Tailwind CSS](https://tailwindcss.com/)  | 原子化 CSS 框架，Utility-First 开发体验 |
+| [Element Plus](https://element-plus.org/) | Vue 3 组件库（Message 提示等）          |
+| [IconFont](https://www.iconfont.cn/)      | 阿里图标库，自定义图标字体              |
 
 ### 工程化 & 工具
 
-| 技术 | 用途 |
-|------|------|
-| [Axios](https://axios-http.com/) | HTTP 客户端，封装 Token 注入 + 统一错误处理 |
-| [Mock.js](https://github.com/nuysoft/Mock) | 动态生成随机 Mock 数据 |
-| [Prettier](https://prettier.io/) | 代码格式化 |
-| [PostCSS](https://postcss.org/) + [Autoprefixer](https://github.com/postcss/autoprefixer) | CSS 后处理 |
+| 技术                                                                                      | 用途                                        |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [Axios](https://axios-http.com/)                                                          | HTTP 客户端，封装 Token 注入 + 统一错误处理 |
+| [Mock.js](https://github.com/nuysoft/Mock)                                                | 动态生成随机 Mock 数据                      |
+| [Prettier](https://prettier.io/)                                                          | 代码格式化                                  |
+| [PostCSS](https://postcss.org/) + [Autoprefixer](https://github.com/postcss/autoprefixer) | CSS 后处理                                  |
 
 ### 架构亮点
 
-| 亮点 | 说明 |
-|------|------|
-| **服务端 Mock 中间件** | 自定义 Vite 插件，在 Dev Server 层拦截 `/api/*` 请求，Network 面板可见 |
-| **Mock.js 动态数据** | 每次启动生成全新随机数据，中文人名/标题/正文均由 Mock.js 生成 |
-| **Composition API** | 全部使用 `<script setup>` 语法，逻辑清晰 |
-| **Composables 抽离** | `useToggleAction` 封装点赞/收藏的乐观更新 + 防抖锁 + 失败回滚 |
-| **自定义指令** | `v-lazy` 图片懒加载，基于 IntersectionObserver + 预加载 |
-| **CSS 瀑布流** | 纯 CSS `columns-2` 实现，无需第三方瀑布流库 |
-| **Pinia 模块化** | 按功能拆分 Store（user / notice / cart），Option Store 和 Setup Store 混用演示 |
+| 亮点                   | 说明                                                                           |
+| ---------------------- | ------------------------------------------------------------------------------ |
+| **服务端 Mock 中间件** | 自定义 Vite 插件，在 Dev Server 层拦截 `/api/*` 请求，Network 面板可见         |
+| **Mock.js 动态数据**   | 每次启动生成全新随机数据，中文人名/标题/正文均由 Mock.js 生成                  |
+| **Composition API**    | 全部使用 `<script setup>` 语法，逻辑清晰                                       |
+| **Composables 抽离**   | `useToggleAction` 封装点赞/收藏的乐观更新 + 防抖锁 + 失败回滚                  |
+| **自定义指令**         | `v-lazy` 图片懒加载，基于 IntersectionObserver + 预加载                        |
+| **CSS 瀑布流**         | 纯 CSS `columns-2` 实现，无需第三方瀑布流库                                    |
+| **Pinia 模块化**       | 按功能拆分 Store（user / notice / cart），Option Store 和 Setup Store 混用演示 |
 
 ---
 
@@ -226,10 +222,10 @@ redBook/
 // mock/posts.js — 不是写死的数组，是动态模板
 response: ({ query }) => {
   const list = Array.from({ length: 10 }, () => ({
-    title:   Random.ctitle(8, 20),           // 随机中文标题
-    author:  Random.cname(),                  // 随机中文名
-    likes:   Random.natural(500, 60000),      // 随机点赞数
-    cover:   `https://picsum.photos/seed/${Random.guid()}/400/500`,
+    title: Random.ctitle(8, 20), // 随机中文标题
+    author: Random.cname(), // 随机中文名
+    likes: Random.natural(500, 60000), // 随机点赞数
+    cover: `https://picsum.photos/seed/${Random.guid()}/400/500`,
   }))
   return { code: 200, data: list }
 }
@@ -306,5 +302,5 @@ npm run preview   # 预览构建产物
 如果这个项目对你有帮助，请给一个 ⭐ Star 支持一下！
 
 <p align="center">
-  <sub>Made with ❤️ by Vue 3 Learner</sub>
+  <sub>Made with ❤️ by Kayce Jiang</sub>
 </p>

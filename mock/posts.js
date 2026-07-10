@@ -1,5 +1,5 @@
 /**
- * 首页瀑布流笔记列表 — Mock.js 动态生成
+ * 首页瀑布流笔记列表 — 动态随机生成
  */
 import Mock from 'mockjs'
 

@@ -13,7 +13,12 @@ const channelList = ref([])
 const getChannels = async () => {
   try {
     const res = await getChannelList()
-    channelList.value = res.data
+    const list = res?.data
+    if (!Array.isArray(list) || list.length === 0) {
+      console.warn('频道数据为空或格式异常:', res)
+      return
+    }
+    channelList.value = list
 
     console.log('频道获取成功:', channelList.value)
 

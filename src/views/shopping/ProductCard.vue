@@ -50,7 +50,7 @@ const props = defineProps({
         <!-- 作者 (这里假设你的接口里有 authorAvatar 和 authorName) -->
         <div class="flex items-center gap-1">
           <img
-            :src="data.authorAvatar || 'https://via.placeholder.com/20'"
+            :src="data.authorAvatar || 'data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2220%22 height=%2220%22%3E%3Ccircle cx=%2210%22 cy=%2210%22 r=%2210%22 fill=%22%23e0e0e0%22/%3E%3C/svg%3E'"
             class="h-4 w-4 rounded-full"
           />
           <span class="w-16 truncate text-[10px] text-gray-500">{{

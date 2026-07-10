@@ -1,5 +1,5 @@
 /**
- * 消息通知页 — Mock.js 动态生成消息列表
+ * 消息通知页 — 动态随机生成消息列表
  */
 import Mock from 'mockjs'
 

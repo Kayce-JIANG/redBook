@@ -1,5 +1,5 @@
 /**
- * 笔记详情页 — Mock.js 动态生成正文、评论
+ * 笔记详情页 — 动态随机生成正文、评论
  */
 import Mock from 'mockjs'
 
