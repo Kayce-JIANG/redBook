@@ -130,7 +130,8 @@ function mockServerPlugin() {
 // ============================================================
 export default defineConfig({
   // GitHub Pages 部署基准路径（仓库名是什么就填什么）
-  base: process.env.NODE_ENV === 'production' ? '/redBook/' : '/',
+  // Vite 开发服务器自动忽略 base，只在构建时生效，所以直接写死即可
+  base: '/redBook/',
   server: {
     open: true,
     port: 8088,
