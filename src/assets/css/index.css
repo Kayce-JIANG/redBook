@@ -1,0 +1,25 @@
+/* 详情页 */
+
+.detail-img {
+  width: 100%;
+  height: 300px;
+  background-color: #f7f7f7;
+  text-align: center;
+  overflow: hidden;
+}
+.detail-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.detail-item {
+  padding: 20px;
+}
+.detail-item title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.detail-info {
+  font-size: 16px;
+}
